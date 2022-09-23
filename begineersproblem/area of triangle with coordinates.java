@@ -1,0 +1,18 @@
+import java.util.*;
+import java.lang.Math.*;
+class Main {
+  public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the First Coordinates :");
+     int x1=sc.nextInt();
+     int y1=sc.nextInt();
+    System.out.println("Enter the Second Coordinates :");
+     int x2=sc.nextInt();
+     int y2=sc.nextInt();
+    System.out.println("Enter the Third Coordinates :");
+     int x3=sc.nextInt();
+     int y3=sc.nextInt();
+    int area=Math.abs((x1*(y2-y3))+(x2*(y3-y1))+(x3*(y1-y2)));
+    System.out.print("The area of Triangle is : "+area/2);
+  }
+}
